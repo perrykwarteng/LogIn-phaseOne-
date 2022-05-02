@@ -9,10 +9,108 @@
     --btn-color:#624763;
     --text-color:#fff;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     font-family:'Poppins', sans-serif;
     background-color:var(--backgroung-color);
 }
 h2,p{
     color: var(--text-color);
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .log_in{
+    width: 300px;
+    transition: .3s;
+}
+.container .head .head_name{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.container .head .head_text{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.container .body{
+    margin-top: 2rem;
+}
+.body .form{
+    margin-bottom: 1.5rem;
+}
+.body .form input{
+    width: 100%;
+    height: 3rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    font-size: 1.5rem;
+    color: var(--text-color);
+    position: relative;
+    outline: none;
+}
+::placeholder{
+
+    color: rgb(219, 219, 219);
+}
+.body .check label{
+    margin-left: .5rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.body .button{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--btn-color);
+    border: none;
+    margin-top: 2rem;
+}
+.body .profile-text{
+    display: flex;
+    justify-content: space-between;
+}
+.body .modify{
+    display: flex;
+    margin-top: 2rem;
+}
+.body .modify a{
+    color: #624763;
+    text-decoration: none;
+}
+.body .modify .line{
+    width: 1px;
+    height: 3.8rem;
+    background: #fff;
+}
+.modify_text p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+@media screen and (min-width:786px) {
+    .container .log_in{
+        width: 450px
+    }
+    .body .form input{
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+    .body .button{
+        height: 5rem;
+    }
+    .body .profile-text{
+        width: 300px;
+        margin-left: 8rem;
+    }
+
 }

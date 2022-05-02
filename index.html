@@ -10,17 +10,44 @@
 </head>
 <body>
    <div class="container">
-       <div class="head">
-           <h2 class="head_name">Welcome</h2>
-           <p class="head_text">Today will be great</p>
-       </div>
-       <div class="body">
-           <div class="form_email">
-               <input type="email" name="email" placeholder="Email Address">
+       <div class="log_in">
+           <div class="head">
+               <h2 class="head_name">Welcome!</h2>
+               <p class="head_text">Today will be great</p>
            </div>
-           <div class="form_pass">
-            <input type="password" name="password" placeholder="************">
+           <div class="body">
+               <form action="">
+                   <div class="form form_email">
+                    <input type="email" name="email" required placeholder="email">
+                   </div>
+                   <div class="form form_pass">
+                     <input type="password" name="password"required placeholder="password">
+                   </div>
+                   <div class="check">
+                       <input type="checkbox" name="remember" id="remember">
+                       <label for="remember">Remember my user</label>
+                   </div>
+                   <div>
+                       <button class="button" type="submit">LOGIN</button>
+                   </div>
+               </form>
+               <div class="profile-text">
+                   <div class="modify">
+                    <div class="line"></div>
+                    <div class="modify_text">
+                        <p><a href="#">Recreate Password</a></p>
+                        <p><a href="#">Manage Profile</a></p>
+                    </div>
+                   </div>
+                   <div class="modify">
+                    <div class="line"></div>
+                    <div class="modify_text">
+                        <p><a href="#">forget Password</a></p>
+                        <p><a href="#">Change Password</a></p>
+                    </div>
                </div>
+            </div>
+           </div>
        </div>
    </div>
 </body>
