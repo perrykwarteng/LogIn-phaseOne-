@@ -8,6 +8,7 @@
     --backgroung-color:#2F1847;
     --btn-color:#624763;
     --text-color:#fff;
+    --hover-color:#F9B3D1;
 }
 html{
     font-size: 62.5%;
@@ -21,7 +22,7 @@ h2,p{
 }
 .container{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +75,11 @@ h2,p{
     background: var(--btn-color);
     border: none;
     margin-top: 2rem;
+    transition: .3s ease;
+}
+.body .button:hover{
+    background:var(--hover-color);
+    color: var(--backgroung-color);
 }
 .body .profile-text{
     display: flex;
